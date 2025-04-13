@@ -1,0 +1,79 @@
+
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>learn-and-code-campus</title>
+    <meta name="description" content="Lovable Generated Project" />
+    <meta name="author" content="Lovable" />
+
+    <meta property="og:title" content="learn-and-code-campus" />
+    <meta property="og:description" content="Lovable Generated Project" />
+    <meta property="og:type" content="website" />
+    <meta property="og:image" content="https://shorturl.at/zGdHv" />
+
+    <meta name="twitter:card" content="summary_large_image" />
+    <meta name="twitter:site" content="@lovable_dev" />
+    <meta name="twitter:image" content="https://shorturl.at/eap9J" />
+  </head>
+
+  <body>
+    <div id="root"></div>
+    <!-- IMPORTANT: DO NOT REMOVE THIS SCRIPT TAG OR THIS VERY COMMENT! -->
+    <script src="https://cdn.gpteng.co/gptengineer.js" type="module"></script>
+    <script type="module" src="/src/main.tsx"></script>
+    <!-- Chat Button and Chatbot iframe -->
+<style>
+  #chatButton {
+    position: fixed;
+    bottom: 20px;
+    right: 20px;
+    background-color: #007bff;
+    color: white;
+    border: none;
+    border-radius: 50%;
+    width: 60px;
+    height: 60px;
+    font-size: 30px;
+    cursor: pointer;
+    z-index: 10000;
+    box-shadow: 0 4px 8px rgba(0,0,0,0.2);
+  }
+
+  #chatIframe {
+    display: none;
+    position: fixed;
+    bottom: 90px;
+    right: 20px;
+    width: 400px;
+    height: 500px;
+    border: none;
+    z-index: 9999;
+    box-shadow: 0 4px 8px rgba(0,0,0,0.3);
+    border-radius: 10px;
+  }
+</style>
+
+<button id="chatButton">💬</button>
+
+<iframe
+  id="chatIframe"
+  src="https://www.chatbase.co/chatbot-iframe/Lb2OphrwM04uqo_elHexe">
+</iframe>
+
+<script>
+  const chatButton = document.getElementById('chatButton');
+  const chatIframe = document.getElementById('chatIframe');
+
+  chatButton.addEventListener('click', () => {
+    if (chatIframe.style.display === 'none') {
+      chatIframe.style.display = 'block';
+    } else {
+      chatIframe.style.display = 'none';
+    }
+  });
+</script>
+
+  </body>
+</html>
